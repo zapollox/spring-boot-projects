@@ -111,4 +111,4 @@ mybatis-plus:
 logging:
   level:
     com:
-      receipt: debug
+      apollo: debug
