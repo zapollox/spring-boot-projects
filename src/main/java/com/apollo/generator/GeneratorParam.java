@@ -1,6 +1,7 @@
 package com.apollo.generator;
 
 /**
+ * 备注
  */
 public class GeneratorParam {
     /**
