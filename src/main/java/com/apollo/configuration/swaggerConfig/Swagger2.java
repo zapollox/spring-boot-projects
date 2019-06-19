@@ -42,7 +42,7 @@ public class Swagger2 {
     private ApiInfo apiInfo(){
         return new ApiInfoBuilder()
                 .title("apollo")
-                .description("测试接口连通性")
+                .description("1.0swagger")
                 .termsOfServiceUrl("http://cn.hyperchian")
                 .version("1.0")
                 .build();

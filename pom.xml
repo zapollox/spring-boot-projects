@@ -6,7 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.0.3.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 	<groupId>com.apollo</groupId>
 	<artifactId>springbootprojects</artifactId>
@@ -149,74 +149,6 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-pool2</artifactId>
 		</dependency>
-		<!--<dependency>-->
-		<!--<groupId>cn.hyperchain.javasdk</groupId>-->
-		<!--<artifactId>hyperchainsdk</artifactId>-->
-		<!--<version>4.1.10</version>-->
-		<!--<exclusions>-->
-		<!--<exclusion>-->
-		<!--<groupId>com.alibaba</groupId>-->
-		<!--<artifactId>fastjson</artifactId>-->
-		<!--</exclusion>-->
-		<!--</exclusions>-->
-		<!--</dependency>-->
-
-		<!--<dependency>-->
-		<!--<groupId>cn.hyperchain.application.common</groupId>-->
-		<!--<artifactId>common-utils</artifactId>-->
-		<!--<version>1.1</version>-->
-		<!--</dependency>-->
-		<!--<dependency>-->
-		<!--<groupId>hyperchain.application.common</groupId>-->
-		<!--<artifactId>esdk</artifactId>-->
-		<!--<version>4.1.10-lc-v0.2</version>-->
-		<!--<exclusions>-->
-		<!--<exclusion>-->
-		<!--<groupId>org.springframework</groupId>-->
-		<!--<artifactId>spring-context</artifactId>-->
-		<!--</exclusion>-->
-		<!--<exclusion>-->
-		<!--<groupId>org.springframework</groupId>-->
-		<!--<artifactId>spring-core</artifactId>-->
-		<!--</exclusion>-->
-		<!--<exclusion>-->
-		<!--<groupId>org.springframework</groupId>-->
-		<!--<artifactId>spring-beans</artifactId>-->
-		<!--</exclusion>-->
-		<!--<exclusion>-->
-		<!--<groupId>org.springframework</groupId>-->
-		<!--<artifactId>spring-orm</artifactId>-->
-		<!--</exclusion>-->
-		<!--<exclusion>-->
-		<!--<groupId>org.springframework</groupId>-->
-		<!--<artifactId>spring-web</artifactId>-->
-		<!--</exclusion>-->
-		<!--<exclusion>-->
-		<!--<groupId>org.springframework</groupId>-->
-		<!--<artifactId>spring-webmvc</artifactId>-->
-		<!--</exclusion>-->
-		<!--&lt;!&ndash;spring aop&ndash;&gt;-->
-		<!--<exclusion>-->
-		<!--<groupId>org.springframework</groupId>-->
-		<!--<artifactId>spring-aop</artifactId>-->
-		<!--</exclusion>-->
-		<!--<exclusion>-->
-		<!--<groupId>org.springframework.security</groupId>-->
-		<!--<artifactId>spring-security-web</artifactId>-->
-		<!--</exclusion>-->
-		<!--<exclusion>-->
-		<!--<groupId>org.springframework.security</groupId>-->
-		<!--<artifactId>spring-security-config</artifactId>-->
-		<!--</exclusion>-->
-		<!--&lt;!&ndash; Spring Security E &ndash;&gt;-->
-		<!--&lt;!&ndash; Spring Security Jwt S &ndash;&gt;-->
-		<!--<exclusion>-->
-		<!--<groupId>org.springframework.security</groupId>-->
-		<!--<artifactId>spring-security-jwt</artifactId>-->
-		<!--</exclusion>-->
-		<!--</exclusions>-->
-		<!--</dependency>-->
-
 	</dependencies>
 
 
@@ -271,17 +203,6 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
-		<!--<repository>-->
-		<!--<id>hyperchain</id>-->
-		<!--<url>rl>http://172.16.4.1:8081/repository/hyperchain/</url>-->
-		<!--<layout>default</layout>-->
-		<!--<releases>-->
-		<!--<enabled>true</enabled>-->
-		<!--</releases>-->
-		<!--<snapshots>-->
-		<!--<enabled>true</enabled>-->
-		<!--</snapshots>-->
-		<!--</repository>-->
 	</repositories>
 
 </project>
