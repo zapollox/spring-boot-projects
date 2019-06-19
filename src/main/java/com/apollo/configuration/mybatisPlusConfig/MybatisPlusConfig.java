@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 @EnableTransactionManagement
 @Configuration
-@MapperScan("com.apollo.modules.*.mapper.*Mapper")
+@MapperScan("com.apollo.modules.mapper")
 public class MybatisPlusConfig {
     /**
      * mybatis-plus 分页插件

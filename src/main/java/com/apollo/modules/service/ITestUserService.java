@@ -1,7 +1,9 @@
-package com.apollo.modules.test.service;
+package com.apollo.modules.service;
 
-import com.apollo.modules.test.entity.TestUser;
+import com.apollo.modules.entity.TestUser;
 import com.baomidou.mybatisplus.service.IService;
+
+import java.util.List;
 
 /**
  * <p>
@@ -12,5 +14,7 @@ import com.baomidou.mybatisplus.service.IService;
  * @since 2019-01-24
  */
 public interface ITestUserService extends IService<TestUser> {
+
+     List<TestUser> findAllUser();
 
 }

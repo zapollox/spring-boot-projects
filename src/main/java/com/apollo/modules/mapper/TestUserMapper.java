@@ -1,8 +1,10 @@
-package com.apollo.modules.test.mapper;
+package com.apollo.modules.mapper;
 
-import com.apollo.modules.test.entity.TestUser;
+import com.apollo.modules.entity.TestUser;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+
+import java.util.List;
 
 /**
  * <p>
@@ -14,5 +16,7 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface TestUserMapper extends BaseMapper<TestUser> {
+
+    List<TestUser> selectAllUser();
 
 }

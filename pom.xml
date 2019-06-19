@@ -181,16 +181,14 @@
 				<filtering>true</filtering>
 			</resource>
 			<!--前面加了文件扫描，resources目录也必须加-->
-			<resource>
-				<directory>src/main/resources</directory>
-				<includes>
-					<include>**/*.xml</include>
-					<include>**/*.properties</include>
-					<include>**/*.yml</include>
-					<include>contractBin/*</include>
-					<include>contractAbi/*</include>
-				</includes>
-			</resource>
+			<!--<resource>-->
+				<!--<directory>src/main/resources</directory>-->
+				<!--<includes>-->
+					<!--<include>**/*.xml</include>-->
+					<!--<include>**/*.properties</include>-->
+					<!--<include>**/*.yml</include>-->
+				<!--</includes>-->
+			<!--</resource>-->
 		</resources>
 	</build>
 
