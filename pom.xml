@@ -43,23 +43,33 @@
 		</dependency>
 
 		<!-- mybatis plus与springboot整合 -->
-		<dependency>
-			<groupId>com.baomidou</groupId>
-			<artifactId>mybatisplus-spring-boot-starter</artifactId>
-			<version>1.0.5</version>
-		</dependency>
-		<!-- MP 核心库 -->
-		<dependency>
-			<groupId>com.baomidou</groupId>
-			<artifactId>mybatis-plus</artifactId>
-			<version>2.1.8</version>
-		</dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+        <!-- mybatis plus自动建表 -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>3.2.0</version>
+        </dependency>
 		<!-- 模板引擎 -->
 		<dependency>
 			<groupId>org.apache.velocity</groupId>
 			<artifactId>velocity</artifactId>
-			<version>1.7</version>
+			<version>2.1</version>
 		</dependency>
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.29</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ibeetl</groupId>
+            <artifactId>beetl</artifactId>
+            <version>3.0.14.RELEASE</version>
+        </dependency>
 
 		<!--mysql相关依赖-->
 		<dependency>
@@ -172,24 +182,24 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<resources>
-			<resource>
-				<directory>src/main/java</directory>
-				<includes>
-					<include>**/*.xml</include>
-				</includes>
-				<filtering>true</filtering>
-			</resource>
-			<!--前面加了文件扫描，resources目录也必须加-->
+		<!--<resources>-->
 			<!--<resource>-->
-				<!--<directory>src/main/resources</directory>-->
+				<!--<directory>src/main/java</directory>-->
 				<!--<includes>-->
 					<!--<include>**/*.xml</include>-->
-					<!--<include>**/*.properties</include>-->
-					<!--<include>**/*.yml</include>-->
 				<!--</includes>-->
+				<!--<filtering>true</filtering>-->
 			<!--</resource>-->
-		</resources>
+			<!--&lt;!&ndash;前面加了文件扫描，resources目录也必须加&ndash;&gt;-->
+			<!--&lt;!&ndash;<resource>&ndash;&gt;-->
+				<!--&lt;!&ndash;<directory>src/main/resources</directory>&ndash;&gt;-->
+				<!--&lt;!&ndash;<includes>&ndash;&gt;-->
+					<!--&lt;!&ndash;<include>**/*.xml</include>&ndash;&gt;-->
+					<!--&lt;!&ndash;<include>**/*.properties</include>&ndash;&gt;-->
+					<!--&lt;!&ndash;<include>**/*.yml</include>&ndash;&gt;-->
+				<!--&lt;!&ndash;</includes>&ndash;&gt;-->
+			<!--&lt;!&ndash;</resource>&ndash;&gt;-->
+		<!--</resources>-->
 	</build>
 
 	<repositories>
@@ -203,4 +213,47 @@
 		</repository>
 	</repositories>
 
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <profileActive>dev</profileActive>
+            </properties>
+
+        </profile>
+        <profile>
+            <id>test</id>
+            <properties>
+                <profileActive>test</profileActive>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>demo</id>
+            <properties>
+                <profileActive>demo</profileActive>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <profileActive>prod</profileActive>
+            </properties>
+        </profile>
+        <profile>
+            <id>verify</id>
+            <properties>
+                <profileActive>verify</profileActive>
+            </properties>
+        </profile>
+        <profile>
+            <id>local</id>
+            <properties>
+                <profileActive>local</profileActive>
+            </properties>
+
+        </profile>
+    </profiles>
 </project>

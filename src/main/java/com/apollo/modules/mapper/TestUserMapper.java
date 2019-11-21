@@ -1,7 +1,7 @@
 package com.apollo.modules.mapper;
 
 import com.apollo.modules.entity.TestUser;
-import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

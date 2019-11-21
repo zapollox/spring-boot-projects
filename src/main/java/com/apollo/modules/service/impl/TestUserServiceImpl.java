@@ -3,7 +3,6 @@ package com.apollo.modules.service.impl;
 import com.apollo.modules.entity.TestUser;
 import com.apollo.modules.mapper.TestUserMapper;
 import com.apollo.modules.service.ITestUserService;
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +17,7 @@ import java.util.List;
  * @since 2019-01-24
  */
 @Service
-public class TestUserServiceImpl extends ServiceImpl<TestUserMapper, TestUser> implements ITestUserService {
+public class TestUserServiceImpl implements ITestUserService {
     @Autowired
     private TestUserMapper testUserMapper;
     @Override
